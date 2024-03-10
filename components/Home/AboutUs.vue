@@ -7,8 +7,8 @@
         <img class="float-lg-right" src="~/assets/new.jpg" alt="home-img" title="home-img" loading="lazy">
       </div>
       <div class="col-12 col-sm-6" id="about-us-text">
-        <h2>New minimalist<br>–components</h2>
-        <p>Gravit will force your feet to the ground. Don’t be afraid, your mind will find your freedom.
+        <h2>Supporting<br>More Crypto Algorithms</h2>
+        <p>Comparing to the sojson, you can easily 
           <br>You won miss a sunrise. You’ll rise with the sun.
           <br>Youl never run away from the storm. You will flow with the wind.
           <br>Don hesitate to pause. Follow the flow of the moment.
@@ -50,7 +50,7 @@
 }
 
 #about-us-text{
-  color: blanchedalmond;
+  color: whitesmoke;
   font-size: large;
 }
 

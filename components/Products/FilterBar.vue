@@ -62,7 +62,8 @@ function algorithm(alg:{name: string, value:string}): void {
 }
 
 .search-title {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
+    padding: 20px;
 }
 
 .search-title h6 {
