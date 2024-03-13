@@ -1,16 +1,18 @@
 <template>
-  <ProductsFilterBar @Alg="handleAlgorithm" />
+  
   <div class="col-11 col-md-12 col-lg-8 mx-auto" style="margin-left:25px !important">
     <div class="input-group">
       <input type="text" v-model="Enc" placeholder="Input plaintext..." class="input-text" />
+      <br>
+      <input type="text" v-model="Dec" placeholder="Input cyphertext..." class="input-text" />
       <div class="button-group">
         <button @click="encrypt">Encryption</button>
         <button @click="decrypt">Decryption</button>
         <button @click="reverse">Reverse</button>
       </div>
-      <input type="text" v-model="Dec" placeholder="Input cyphertext..." class="input-text" />
     </div>
   </div>
+  <ProductsFilterBar @Alg="handleAlgorithm" />
 </template>
 
 <script setup lang="ts">
@@ -89,4 +91,25 @@ button {
   padding: 15px 30px;
   margin: 30px;
 }
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* 添加一些底部边距，以便与其他内容分隔开 */
+}
+
+.button-group button {
+  border: none; /* 移除按钮的默认边框 */
+  border-radius: 5px; /* 设置按钮的圆角 */
+  background-color: darkgray; /* 设置按钮的背景颜色 */
+  color: white; /* 设置按钮的文字颜色为白色 */
+  cursor: pointer; /* 将鼠标光标设置为指针样式 */
+  transition: background-color 0.3s ease; /* 添加过渡效果 */
+}
+
+.button-group button:hover {
+  background-color: grey; /* 悬停时改变按钮的背景颜色 */
+}
+
 </style>

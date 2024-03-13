@@ -1,14 +1,6 @@
 <template>
   <div>
-    <h1 class="pt-3 text-center">Try our online en/decryption service</h1>
-    <nav class="d-flex justify-content-center" aria-label="breadcrumb">
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <NuxtLink to="/">Home</NuxtLink>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">Products</li>
-      </ol>
-    </nav>
+    <h1 class="pt-3 text-center">Choose an algorithm to utillize</h1>
   </div>
 </template>
 

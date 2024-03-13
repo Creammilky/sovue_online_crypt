@@ -3,9 +3,9 @@
         <div class="card-selector">
             <div class="card-body p-5">
                 <div class="search-title">
-                    <h4>Crypto Algorithm</h4>
+                    <h4>Cryption:</h4>
                     <h6 v-for="item in info.types" :key="item.name" @click="algorithm(item)" :class="{ 'selected': item === info.selectedAlgorithm }">
-                        {{ item.name }} {{ item === info.selectedAlgorithm ? '<' : '' }}
+                        {{ item.name }} {{ item === info.selectedAlgorithm ? '+' : '' }}
                     </h6>
                 </div>
             </div>
@@ -55,11 +55,14 @@ function algorithm(alg:{name: string, value:string}): void {
 
 <style scoped>
 .card-selector {
-    color: #DCDCDC;
-    height: 40rem;
-    background: #2c3539 !important;
+    color: black;
+    font: 20px "Times New Roman", Times, serif; /* 将字体设置为Times Roman */
+    height: 35rem;
+    background: blanchedalmond !important;
     box-shadow: 0 8px 6px 0 rgba(0, 0, 0, 0.1), 0 26px 70px 0 rgba(0, 0, 0, 0.69);
+    border-radius: 10px; /* 设置边框为圆角，这里的10px可以根据需求进行调整 */
 }
+
 
 .search-title {
     margin-bottom: 50px;
